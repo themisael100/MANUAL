@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANUAL</title>
+    <link rel="shortcut icon" type="image/png" href="/MANUAL/imagen_logo.png" />
+    <link rel="stylesheet" href="Manual.css" />
+</head>
+
+
+<body>
+    <div class="container-manual">
+        <h1>Manual de usuario</h1>
+
+        <!-- Aside con enlaces -->
+        <aside class="asideCL">
+            <ul>
+                <li><a href="#inicio-sesion">Inicio de sesión</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#entradas">Entradas</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#bodegas">Bodegas</a></li>
+                <li><a href="#procesos">Procesos</a></li>
+                <li><a href="#sucursales">Sucursales</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main>
+            <p>
+                En las siguientes páginas, se desglosa detalladamente el Manual de Usuario de la Plataforma de Inventario y
+                Distribución, creado específicamente para atender las necesidades de la bodega de distribución de
+                Restaurantes Maurita. Este manual ha sido elaborado con el objetivo fundamental de brindar una guía
+                comprensiva y completa a los usuarios que interactuarán con la plataforma.
+            </p>
+
+            <h2 style="color: #5d87ff; text-align: center;">¿A quién va dirigido el manual?</h2>
+            <p>
+                El manual está dirigido a dos tipos de usuario, los usuarios de centro de distribución y usuarios de
+                sucursales. A continuación, se mostrarán las funcionalidades del usuario de centro de distribución.
+            </p>
+
+            <!-- Sección de inicio de sesión -->
+            <section id="inicio-sesion">
+                <!-- Contenido de inicio de sesión -->
+                <div class="features" style="text-align: center;">
+                    <div class="feature">
+                        <h2>Inicio de Sesión</h2>
+                        <div class="video-container">
+                            <video class="feature-video" controls>
+                                <source src="~/lib/InventoryPLT/src/assets/images/backgrounds/Login.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                        <p>
+                            En esta etapa, procederás a iniciar sesión utilizando el usuario y la contraseña proporcionados por
+                            el administrador principal de la plataforma.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de productos -->
+            <section id="productos">
+                <!-- Contenido de productos -->
+                <div class="feature" style="text-align: center;">
+                    <h2>Productos</h2>
+                    <p>
+                        En esta pantalla, los usuarios tendrán la capacidad de crear nuevos productos para el inventario. Este proceso está diseñado para el Inventario General, al cual solo <strong style="color: #5d87ff;">usuarios con el rol de AdminGeneral</strong> tienen acceso para
+                        realizar ingresos de nuevos productos.
+                    </p>
+                    <div class="video-container">
+                        <video class="feature-video" controls>
+                            <source src="~/lib/InventoryPLT/src/assets/images/backgrounds/Productos.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                    </div>
+
+                    <p>
+                        <strong style="color: #5d87ff;">Creación de Productos:</strong>
+                        Este proceso permite a los usuarios crear nuevos productos a través de un formulario donde se ingresa la
+                        información pertinente. Es importante destacar que si se intenta añadir un producto con un nombre ya
+                        existente, el sistema rechazará la solicitud para evitar duplicidades en el inventario.
+                        <br>
+                        <br>
+                        <strong style="color: #5d87ff;">Filtrado por bodega:</strong>
+                        Los usuarios pueden filtrar los productos según la bodega a la que pertenecen. Al seleccionar una bodega
+                        específica, el sistema mostrará automáticamente todos los productos relacionados con esa ubicación,
+                        facilitando así la gestión del inventario por ubicación física.
+                        <br>
+                        <br>
+                        <strong style="color: #5d87ff;">Busqueda por nombre:</strong>
+                        Esta función permite buscar un producto utilizando su nombre completo. Proporciona una manera rápida y
+                        eficiente de localizar un producto específico en el sistema.
+                        <br>
+                        <br>
+                        <strong style="color: #5d87ff; text-align: center;">Acciones disponibles:</strong>
+                        <br>
+                        <br>
+                        <strong style="color: #5d87ff;">Detalles:</strong> Esta opción muestra información detallada del
+                        producto, proporcionando una visión completa de sus características y especificaciones.
+                        <br>
+                        <br>
+                        <strong style="color: #5d87ff;">Editar:</strong> Permite modificar la información del producto a través
+                        de un formulario dedicado, ofreciendo la flexibilidad necesaria para actualizar los detalles del
+                        producto según sea necesario.
+                        <br>
+                        <br>
+                        <strong style="color: #5d87ff;">Eliminar:</strong> Al seleccionar esta opción, se mostrará una alerta
+                        para confirmar la eliminación del producto. Esta acción debe realizarse con precaución, ya que eliminará
+                        permanentemente el producto del inventario.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Sección de entradas -->
+            <section id="entradas">
+                <!-- Contenido de entradas -->
+                <div class="features" style="text-align: center;">
+                    <div class="feature">
+                        <h2>Entradas</h2>
+                        <div class="video-container">
+                            <p>
+                                En esta pantalla, los usuarios tendrán la capacidad de ingresar nuevas cantidades al inventario
+                                existente. Este proceso está diseñado para el Inventario General, al cual solo <strong style="color: #5d87ff;">usuarios con el rol de AdminGeneral</strong> tienen acceso para
+                                realizar ingresos de nuevos productos.
+                            </p>
+                            <video class="feature-video" controls>
+                                <source src="~/lib/InventoryPLT/src/assets/images/backgrounds/EntradasGeneral.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                        <p>
+                            El sistema está configurado para evitar la entrada de valores nulos en el formulario, garantizando
+                            así la integridad de los datos. <strong style="color: #5d87ff;">
+                                las cantidades ingresadas y
+                                guardadas se sumarán automáticamente a las existencias del producto correspondiente
+                            </strong>. Es
+                            importante destacar que la eliminación de registros no afectará las cantidades ingresadas
+                            previamente; solo se eliminará el historial de esa entrada en particular, sin afectar la cantidad
+                            total en el inventario. Por lo tanto, se requiere <strong style="color: #5d87ff;">
+                                precaución al
+                                ingresar nuevas cantidades de productos
+                            </strong>.
+                            <br>
+                            <br>
+                            Además, el sistema ofrece la funcionalidad de filtrado por fecha, permitiendo a los usuarios
+                            visualizar un historial de entradas según criterios temporales. Los usuarios pueden ingresar
+                            cualquier fecha, y si existen entradas en el día especificado, el sistema las mostrará
+                            automáticamente en la vista correspondiente.
+                            <br>
+                            <br>
+                            Por último, el sistema facilita la generación de un archivo PDF que contiene toda la información de
+                            las entradas diarias. Es importante tener en cuenta que una vez <strong style="color: #5d87ff;">
+                                transcurridas 24 horas del día en cuestión, no será posible generar dicho PDF
+                            </strong>.
+
+                            Esta estructura garantiza un manejo eficiente y preciso del inventario, ofreciendo a los usuarios
+                            las herramientas necesarias para gestionar las entradas de manera efectiva y mantener un registro
+                            detallado de las transacciones.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de categorías -->
+            <section id="categorias">
+                <!-- Contenido de categorías -->
+                <div class="features" style="text-align: center;">
+                    <div class="feature">
+                        <h2>Categorias</h2>
+                        <div class="video-container">
+                            <p>
+                                En esta pantalla, los usuarios tendrán la capacidad de ingresar nuevas categorias. Este proceso
+                                está diseñado para el Inventario General, al cual solo <strong style="color: #5d87ff;">
+                                    usuarios
+                                    con el rol de AdminGeneral
+                                </strong> tienen acceso para realizar ingresos de nuevos
+                                productos.
+                            </p>
+                            <video class="feature-video" controls>
+                                <source src="~/lib/InventoryPLT/src/assets/images/backgrounds/Categorias.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                        <p>
+                            En esta interfaz, los usuarios tendrán la capacidad de crear las diversas categorías que se utilizan
+                            en el almacén general. Este proceso es fundamental para diferenciar los productos y mantener una
+                            administración eficiente de su ubicación. Una vez que el usuario crea una categoría, esta se
+                            integrará automáticamente en el formulario de creación de productos, lo que facilitará su uso.
+                            <br>
+                            <br>
+                            Es importante destacar que una vez que una <strong style="color: #5d87ff;"> categoría</strong> sea
+                            asignada a un producto, <strong style="color: #5d87ff;">
+                                no podrá ser eliminada debido a
+                                restricciones de claves foráneas
+                            </strong>. Esta medida se implementa para garantizar la
+                            integridad de los datos y el correcto funcionamiento de la aplicación. <strong style="color: #5d87ff;">Por lo tanto</strong>, se recomienda que los usuarios tengan una
+                            comprensión clara de las categorías que ingresarán en el sistema. No obstante, las categorías pueden
+                            ser editadas en caso de ser necesario. Si el usuario asigna un nuevo nombre a una categoría, todos
+                            los productos asociados a esa categoría se actualizarán automáticamente con el nuevo nombre.
+                            <br>
+                            <br>
+                            Esta estructura proporciona un medio efectivo para mantener organizados los productos en el almacén,
+                            facilitando la gestión y optimizando el flujo de datos dentro de la aplicación.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de bodegas -->
+            <section id="bodegas">
+                <!-- Contenido de bodegas -->
+                <div class="features" style="text-align: center;">
+                    <div class="feature">
+                        <h2>Bodegas</h2>
+                        <div class="video-container">
+                            <p>
+                                En esta pantalla, los usuarios tendrán la capacidad de ingresar nuevas Bodegas. Este proceso
+                                está diseñado para el Inventario General, al cual solo <strong style="color: #5d87ff;">
+                                    usuarios
+                                    con el rol de AdminGeneral
+                                </strong> tienen acceso para realizar ingresos de nuevos
+                                productos.
+                            </p>
+                            <video class="feature-video" controls>
+                                <source src="~/lib/InventoryPLT/src/assets/images/backgrounds/Bodegas.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                        <p>
+                            En esta interfaz, los usuarios tendrán la capacidad de crear las diversas bodegas que se utilizan
+                            en el almacén general. Este proceso es fundamental para diferenciar los productos y mantener una
+                            administración eficiente de su ubicación. Una vez que el usuario crea una bodega, esta se
+                            integrará automáticamente en el formulario de creación de productos, lo que facilitará su uso.
+                            <br>
+                            <br>
+                            Es importante destacar que una vez que una <strong style="color: #5d87ff;"> bodega</strong> sea
+                            asignada a un producto, <strong style="color: #5d87ff;">
+                                no podrá ser eliminada debido a
+                                restricciones de claves foráneas
+                            </strong>. Esta medida se implementa para garantizar la
+                            integridad de los datos y el correcto funcionamiento de la aplicación. <strong style="color: #5d87ff;">Por lo tanto</strong>, se recomienda que los usuarios tengan una
+                            comprensión clara de las bodegas que ingresarán en el sistema. No obstante, las bodegas pueden
+                            ser editadas en caso de ser necesario. Si el usuario asigna un nuevo nombre a una bodega, todos
+                            los productos asociados a esa bodega se actualizarán automáticamente con el nuevo nombre.
+                            <br>
+                            <br>
+                            Esta estructura proporciona un medio efectivo para mantener organizados los productos en el almacén,
+                            facilitando la gestión y optimizando el flujo de datos dentro de la aplicación.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de procesos -->
+            <section id="procesos">
+                <!-- Contenido de procesos -->
+                <div class="features" style="text-align: center;">
+                    <div class="feature">
+                        <h2>Procesos</h2>
+                        <div class="video-container">
+                            <p>
+                                En esta pantalla, los usuarios tendrán la capacidad de ingresar nuevas Bodegas. Este proceso
+                                está diseñado para el Inventario General, al cual solo <strong style="color: #5d87ff;">
+                                    usuarios
+                                    con el rol de AdminGeneral
+                                </strong> tienen acceso para realizar ingresos de nuevos
+                                productos.
+                            </p>
+                            <video class="feature-video" controls>
+                                <source src="~/lib/InventoryPLT/src/assets/images/backgrounds/Proceso.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                        <p>
+
+                            En esta sección, los usuarios pueden realizar el proceso de cortes y porcionado de productos en el
+                            almacén. Este procedimiento es esencial para dividir los productos en tamaños más pequeños o
+                            porciones manejables, adaptándose así a las necesidades específicas de los clientes o para mejorar
+                            la eficiencia en su distribución.
+                            <br>
+                            <br>
+                            <strong style="color: #5d87ff;">Es importante destacar</strong> que, por el momento, esta
+                            funcionalidad está en proceso de desarrollo y no está completamente integrada en el sistema para
+                            llevar a cabo el porcionado internamente. Esto se debe a que el sistema aún no cuenta con
+                            funcionalidades de <strong style="color: #5d87ff;">facturación</strong>, lo que dificulta determinar
+                            la cantidad exacta de porciones que serán vendidas o distribuidas.
+                            <br>
+                            <br>
+                            En este sentido, la funcionalidad actual tiene como objetivo principal <strong style="color: #5d87ff;">mantener un registro</strong> de los procesos de cortes y porcionado en
+                            el sistema. Esta información será valiosa en el futuro para guiar la <strong style="color: #5d87ff;"> expansión del sistema</strong> y permitir que cumpla su función
+                            completa. Por ahora, la pantalla solo ofrece opciones para eliminar, editar, ver detalles y agregar
+                            nuevos procesos de cortes y porcionado.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de sucursales -->
+            <section id="sucursales">
+                <!-- Contenido de sucursales -->
+                <div class="features" style="text-align: center;">
+                    <div class="feature">
+                        <h2>Sucursales</h2>
+                        <div class="video-container">
+                            <p>
+                                En esta pantalla, los usuarios tendrán la capacidad de crear nuevas sucursales. Este proceso
+                                está diseñado para el Inventario General, al cual solo <strong style="color: #5d87ff;">
+                                    usuarios
+                                    con el rol de AdminGeneral
+                                </strong> tienen acceso para realizar ingresos de nuevos
+                                productos.
+                            </p>
+                            <video class="feature-video" controls>
+                                <source src="~/lib/InventoryPLT/src/assets/images/backgrounds/Sucursales.mp4" type="video/mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                        <p>
+                            En esta sección, los usuarios pueden crear nuevas sucursales dentro del sistema de gestión. La
+                            creación de sucursales es fundamental para expandir la cobertura geográfica de la empresa y
+                            gestionar eficazmente sus operaciones en diferentes ubicaciones.
+                            <br>
+                            <br>
+                            Al crear una nueva sucursal, los usuarios pueden especificar detalles importantes, como el nombre de
+                            la sucursal, la dirección, información de contacto y cualquier otra información relevante. Esto
+                            garantiza que cada sucursal esté adecuadamente identificada y configurada en el sistema.
+                            <br>
+                            <br>
+                            Es importante tener en cuenta que una vez creada, una sucursal queda registrada permanentemente
+                            <u>(puede ser eliminada de ya no ser necesaria)</u> en el sistema y puede ser utilizada para
+                            gestionar inventario, ventas por razones de desarrollo aun no gestiona ventas, pero si <strong style="color: #5d87ff;">salidas de productos en las sucursales</strong> y otras operaciones
+                            relacionadas. Sin embargo, la información de la sucursal puede editarse en cualquier momento si es
+                            necesario actualizarla debido a cambios en la dirección o cualquier otra razón.
+                            <br>
+                            <br>
+                            Además, la creación de sucursales puede facilitar la <strong style="color: #5d87ff;">
+                                asignación de
+                                roles y permisos a los usuarios
+                            </strong>, permitiendo que ciertos empleados accedan solo a la
+                            información y funciones relacionadas con su sucursal específica.
+                            <br>
+                            <br>
+
+                            El Administrador General tiene la capacidad de <strong style="color: #5d87ff;">
+                                visualizar los
+                                productos disponibles en todas las
+                                sucursales
+                            </strong>, junto con sus respectivas existencias. Esta funcionalidad brinda un control
+                            más preciso
+                            del inventario y proporciona una visión clara de la distribución de productos en todas las
+                            ubicaciones de la empresa.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+          <!-- Botón para volver hacia arriba -->
+          <button onclick="scrollToTop()" id="scrollTopBtn" title="Volver hacia el menú">↑</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+/* Estilos para la estructura container */
+.container-manual {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    /* Estilos para el título h1 */
+    .container-manual h1 {
+        text-align: center;
+        color: #5d87ff;
+    }
+
+    /* Estilos para los párrafos */
+    .container-manual p {
+        line-height: 1.6;
+        color: #666;
+    }
+
+    /* Estilos para las secciones de características */
+    .container-manual .features {
+        margin-top: 30px;
+    }
+
+    /* Estilos para cada característica */
+    .container-manual .feature {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #99b3fa50;
+        border-radius: 5px;
+    }
+
+        /* Estilos para el título de cada característica */
+        .container-manual .feature h2 {
+            color: #5d87ff;
+            text-align: center;
+        }
+
+        /* Estilos para la imagen dentro de la característica */
+        .container-manual .feature .feature-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+    /* Estilos para los títulos dentro de las tarjetas */
+    .container-manual .titulos-targeta {
+        color: #5d87ff;
+        text-align: center;
+    }
+
+    /* Estilos para el contenedor de video */
+    .container-manual .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Proporción de aspecto 16:9 para videos */
+        overflow: hidden;
+    }
+
+    /* Estilos para el video dentro del contenedor */
+    .container-manual .feature-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    /* Estilos para el menú */
+/* Estilos para el menú */
+.asideCL {
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.asideCL ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.asideCL li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* Estilos para los enlaces */
+.asideCL a {
+    padding: 8px;
+    color: #5d87ff;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Cambiar el color del botón al pasar el cursor */
+.asideCL a:hover {
+    background-color: #5d87ff;
+    color: white;
+    border-color: #5d87ff;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .asideCL ul {
+        display: block;
+    }
+    .asideCL li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+ /* Estilos para el botón de volver hacia arriba */
+ #scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #5d87ff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 16px;
+}
+
+#scrollTopBtn:hover {
+    background-color: #333;
+}
